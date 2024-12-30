@@ -1,0 +1,15 @@
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.card-container .country-card{
+    border: 1px solid black;
+    border-radius: 5px;
+    align-items: center;
+}
+.card-container .country-card img{
+    width: 240px;
+    height: 150px;
+    object-fit: cover;
+}
