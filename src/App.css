@@ -1,12 +1,17 @@
 .card-container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 50px;
 }
 .card-container .country-card{
     border: 1px solid black;
     border-radius: 5px;
-    align-items: center;
+    text-align: center;
+    width: 240px;
+    height: 270px;
 }
 .card-container .country-card img{
     width: 240px;
