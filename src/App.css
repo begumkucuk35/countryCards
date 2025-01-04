@@ -4,7 +4,7 @@
     gap: 15px;
     align-items: center;
     justify-content: center;
-    padding: 10px 50px;
+    padding: 10px;
 }
 .card-container .country-card{
     border: 1px solid black;
@@ -14,7 +14,16 @@
     height: 270px;
 }
 .card-container .country-card img{
-    width: 240px;
+    width: 100%;
     height: 150px;
     object-fit: cover;
+}
+.sort-icon{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.sort-icon img{
+    width: 20px;
+    height: 20px;
 }
