@@ -1,3 +1,38 @@
+header{
+    height: 40px;
+    background-color: #111928;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-inline: 80px;
+}
+main{
+    padding-inline: 80px;
+}
+.region-tabs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0 0;
+}
+.region-tabs > div{
+    display: flex;
+  flex-wrap: wrap;
+  gap: 10px; 
+  padding: 10px;
+  background-color: #1e1e2f; 
+  border-radius: 10px;
+}
+.region-tabs .region-tabs-btn{
+    padding: 8px 16px; 
+  background-color: #2a2a3c; 
+  color: #fff; 
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
 .card-container{
     display: flex;
     flex-wrap: wrap;

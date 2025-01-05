@@ -38,7 +38,6 @@ function App() {
         selectedRegion === "All"
           ? [...allCountries]
           : allCountries.filter((country) => country.region === selectedRegion);
-  console.log(ascending)
       let sorted = ascending
         ? filtered.sort((a, b) => a.name.common.localeCompare(b.name.common))
         : filtered.sort((a, b) => b.name.common.localeCompare(a.name.common));
@@ -54,11 +53,13 @@ function App() {
       <Header />
       <main>
         <section className="region-tabs">
+          <div>
           {regions.map((region, index) => (
-            <button key={index} onClick={() => setSelectedRegion(region)}>
+            <button key={index} onClick={() => setSelectedRegion(region)} className="region-tabs-btn">
               {region}
             </button>
           ))}
+          </div>
           <button
             onClick={() => setAscending(!ascending)}
             className="sort-icon"
